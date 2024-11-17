@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+#hero {
+    height: calc(100vh - 56px);
+    width: 100%;
+    background-image: url(/img/kabah.jpg);
+    position: relative;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#promo {
+    max-height: 500px;
+}
+
+body {
+    font-family: "Poppins", Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#facility {
+    max-height: 30px;
+    overflow: hidden;
+}
+.title-package {
+    height: 49px;
+    overflow: hidden;
+    display: -webkit-box;
+    min-height: 49px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.container-packages {
+    /* cursor: pointer; */
+}
+.container-packages:hover #facility {
+    max-height: unset;
+    overflow: unset;
+}
+.container-packages:hover .title-package {
+    height: 100%;
+    overflow: unset;
+    text-overflow: unset;
+    display: block;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: unset !important;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.nav-link:hover svg {
+    fill: #ffc107 !important;
+}
+
+.bullet-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bullet-icon-itinerary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    z-index: 3;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #28a745; 
+    color: white; 
+    border-radius: 50%; 
+    position: relative; 
+}
+
+.bullet-wrapper {
+    position: relative;
+}
+
+.bullet-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    /* top: 100%;  */
+    width: 2px; 
+    height: calc(100% + 12px); 
+    background-color: #28a745; 
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.itinerary-item:last-child .bullet-wrapper::after {
+    display: none; 
+}
+
+.fs-7{
+    font-size: 0.9rem;
+}
+
+.fs-8{
+    font-size: 0.8rem;
+}
+.terms-detail p{
+    margin-bottom: 0.1rem;
+
+}
+
+#galleryPage{
+    height: calc(90vh - 70px);
+}
