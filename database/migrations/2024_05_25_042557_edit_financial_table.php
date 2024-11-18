@@ -17,14 +17,6 @@ return new class extends Migration
         Schema::table('financials', function (Blueprint $table) {
             $table->enum('status', ['pending', 'canceled', 'completed', 'dp_completed'])->default('pending');
         });
-
-        Schema::table('branch_financials', function (Blueprint $table) {
-            $table->dropColumn('status');
-        });
-
-        Schema::table('branch_financials', function (Blueprint $table) {
-            $table->enum('status', ['pending', 'canceled', 'completed', 'dp_completed'])->default('pending');
-        });
     }
 
     /**
